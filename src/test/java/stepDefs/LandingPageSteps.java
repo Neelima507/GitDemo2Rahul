@@ -52,6 +52,7 @@ public class LandingPageSteps {
 	@Given("User landed on home page")
 	public void user_landed_on_home_page() {
 	   System.out.println("User landed on home page------------flight page going to land");
+	   System.out.println("Title is: " + landingPage.getcurrentTitle());
 	}
 
 	@When("user clicks on flight link")

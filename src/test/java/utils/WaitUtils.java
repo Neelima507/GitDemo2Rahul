@@ -14,9 +14,9 @@ public class WaitUtils {
 	        this.driver = driver;
 	    }
 	    // Wait for visibility
-	    public WebElement waitForElementVisible(By locator) {
+	    public WebElement waitForElementVisible(WebElement element) {
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-	        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	        return wait.until(ExpectedConditions.visibilityOf(element));
 	    }
 
 	    // Wait for clickability

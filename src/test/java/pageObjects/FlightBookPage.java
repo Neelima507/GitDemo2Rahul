@@ -21,11 +21,12 @@ public class FlightBookPage {
 	        this.driver = driver;
 	        this.waitUtils = waitUtils;
 	    }
-	 public void clickSearchdropdown() {
-		    WebElement autoSuggest = waitUtils.waitForElementVisible(autosuggest);
-		    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", autoSuggest);
-		    autoSuggest.sendKeys("India");
-		} 
+//	 public void clickSearchdropdown() {
+//		   // WebElement autoSuggest = waitUtils.waitForElementVisible(autosuggest);
+//		 
+//		    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", autoSuggest);
+//		    autoSuggest.sendKeys("India");
+//		} 
 
 		public void clickSearchButton() {
 		    waitUtils.waitForElementClickable(searchButton).click();

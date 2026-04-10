@@ -95,6 +95,7 @@ public class LocatorsPageSteps {
         context.extractedPassword = fullText.split("'")[1];
 
         System.out.println("Password extracted: " + context.extractedPassword);
+        
 	}
 
 	@When("user clicks on got ot Login button")
@@ -107,6 +108,7 @@ public class LocatorsPageSteps {
 	   	   String successMessage=locatorsPage.getSuccessMessage();
 	   	   System.out.println("Success Message: " + successMessage);
 	   	   Assert.assertTrue(successMessage.contains("You are successfully logged in"));
+	   	   System.out.println("Login successful with valid credentials");
 	}
 
 

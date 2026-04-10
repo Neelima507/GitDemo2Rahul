@@ -12,6 +12,7 @@ public class PageObjectManager {
 	public CheckOutpage checkOutPage;
 	public FlightBookPage flightBookPage;
 	public WaitUtils waitUtils;
+	public LocatorsPage locatorsPage;
 	
 	public PageObjectManager(WebDriver driver, WaitUtils waitUtils) {
         this.driver = driver;
@@ -36,6 +37,10 @@ public class PageObjectManager {
 	public WaitUtils getWaitUtilsPage() {
 		waitUtils=new WaitUtils(driver);
 		return waitUtils;
+	}
+	public LocatorsPage getlocatorsPage() {
+		locatorsPage=new LocatorsPage(driver);
+		return locatorsPage;
 	}
 	
 }

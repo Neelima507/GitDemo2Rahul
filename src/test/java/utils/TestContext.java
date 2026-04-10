@@ -13,6 +13,7 @@ public class TestContext {
 	public TestBase testBase;
 	public GenericUtils genericUtils;
 	public WaitUtils waitUtils;
+	public String extractedPassword;
 	
 	public TestContext() throws IOException {
 		
@@ -24,5 +25,6 @@ public class TestContext {
 
         // ✅ Pass both driver + waitUtils
         pageObjectManager = new PageObjectManager(driver, waitUtils);
+        
     }
 }

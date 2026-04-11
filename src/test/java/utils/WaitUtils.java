@@ -18,6 +18,10 @@ public class WaitUtils {
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	        return wait.until(ExpectedConditions.visibilityOf(element));
 	    }
+	    public WebElement waitForElementVisible(By locator) {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	    }
 
 	    // Wait for clickability
 	    public WebElement waitForElementClickable(By locator) {

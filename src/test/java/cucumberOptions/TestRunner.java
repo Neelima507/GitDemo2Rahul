@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features="src/test/java",
 glue="stepDefs",
 monochrome=true,
-tags="@locatorspage2",
+tags="@locatorspage2 or @locatorspage",
 plugin= {"html:target/cucumber.html","json:target/cucumber.json",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/failed_scenarios.txt"}
 

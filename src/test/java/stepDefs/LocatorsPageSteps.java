@@ -107,6 +107,8 @@ public class LocatorsPageSteps {
 	   	   String successMessage=locatorsPage.getSuccessMessage();
 	   	   System.out.println("Success Message: " + successMessage);
 	   	   Assert.assertTrue(successMessage.contains("You are successfully logged in"));
+	   	   System.out.println("User logged in successfully with valid credentials.");
+	   	   
 	}
 
 

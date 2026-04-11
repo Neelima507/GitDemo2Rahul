@@ -49,5 +49,6 @@ public void validate_the_selected_value_text() {
     String selectedText = flightBookPage.getSelectedAutoSuggestText();
    System.out.println("Selected auto-suggest text: " + selectedText);
    System.out.println("Current window after switch: " + context.genericUtils.driver.getTitle());
+   
 }
 }

@@ -48,8 +48,8 @@ public class LocatorsPageSteps {
 	}
 	@When("user checks check boxes and get text")
 	public void user_checks_check_boxes_and_get_text() {
-		locatorsPage.clickCheckBoxOne();
-		   locatorsPage.clickCheckBoxTwo();
+		locatorsPage.wait.waitForElementVisible(locatorsPage.checkBox);
+		locatorsPage.wait.waitForElementVisible(locatorsPage.checkBox2);
 		   String rahulText=locatorsPage.getTextOfRahul();
 		   System.out.println("Text displayed: " + rahulText);
 		   Assert.assertTrue(rahulText.contains("Rahul"));

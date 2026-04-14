@@ -19,8 +19,10 @@ public class LocatorsPage {
     @FindBy(css = "input[placeholder='Password']") WebElement password;
 @FindBy(xpath = "//button[@type='submit']") WebElement signIn;
 @FindBy(css = "p.error") WebElement errorMessage;
-		@FindBy(id = "chkboxOne") WebElement checkBox;
-@FindBy(id = "chkboxTwo") WebElement checkBox2;
+		@FindBy(id = "chkboxOne")
+		public WebElement checkBox;
+@FindBy(id = "chkboxTwo")
+public WebElement checkBox2;
  @FindBy(xpath = "//*[@class='overlay-panel overlay-right']//h1") WebElement text;
  @FindBy(linkText = "Forgot your password?") WebElement forgotPassword;
  @FindBy(css = "input[placeholder='Name']")  WebElement username;

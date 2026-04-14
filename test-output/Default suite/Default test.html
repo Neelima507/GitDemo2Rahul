@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 14 13:08:17 PDT 2026</td>
+<td>Started on:</td><td>Tue Apr 14 13:20:10 PDT 2026</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18157 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8235 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,77 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login test", "Login functionality"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; id=&quot;chkboxOne&quot; name=&quot;chkboxOne&quot; value=&quot;rmbrUsername&quot;&gt; is not clickable at point (479, 380). Other element would receive the click: &lt;label for=&quot;chkboxOne&quot;&gt;...&lt;/label&gt;
-  (Session info: chrome=147.0.7727.56)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8a95a9d03a098fde80efc2142318f84f, clickElement {id=f.A6E01393E7AF2701C6DC77E5E5842271.d.E732B52B0E8803049DF7CA8094EC1398.e.4}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: C:\Users\neelu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49688}, goog:processID: 28524, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49688/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8a95a9d03a098fde80efc2142318f84f)] -&gt; id: chkboxOne]
-Session ID: 8a95a9d03a098fde80efc2142318f84f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at pageObjects.LocatorsPage.clickCheckBoxOne(LocatorsPage.java:51)
-	at stepDefs.LocatorsPageSteps.user_checks_check_boxes_and_get_text(LocatorsPageSteps.java:51)
-	at ✽.user checks check boxes and get text(file:///C:/Users/neelu/eclipse-workspace/CucumberFramework/src/test/java/features/locators.feature:27)
-</pre></div><a href='#' onClick='toggleBox("stack-trace903674672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace903674672'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; id=&quot;chkboxOne&quot; name=&quot;chkboxOne&quot; value=&quot;rmbrUsername&quot;&gt; is not clickable at point (479, 380). Other element would receive the click: &lt;label for=&quot;chkboxOne&quot;&gt;...&lt;/label&gt;
-  (Session info: chrome=147.0.7727.56)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8a95a9d03a098fde80efc2142318f84f, clickElement {id=f.A6E01393E7AF2701C6DC77E5E5842271.d.E732B52B0E8803049DF7CA8094EC1398.e.4}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: C:\Users\neelu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49688}, goog:processID: 28524, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49688/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8a95a9d03a098fde80efc2142318f84f)] -&gt; id: chkboxOne]
-Session ID: 8a95a9d03a098fde80efc2142318f84f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at pageObjects.LocatorsPage.clickCheckBoxOne(LocatorsPage.java:51)
-	at stepDefs.LocatorsPageSteps.user_checks_check_boxes_and_get_text(LocatorsPageSteps.java:51)
-	at ✽.user checks check boxes and get text(file:///C:/Users/neelu/eclipse-workspace/CucumberFramework/src/test/java/features/locators.feature:27)
-</pre></div></td>
-<td>16</td>
-<td>cucumberOptions.TestRunner@68567e20</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -149,7 +78,12 @@ Session ID: 8a95a9d03a098fde80efc2142318f84f
 <tr>
 <td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login test", "Login functionality"</td>
 <td></td>
-<td>6</td>
+<td>7</td>
+<td>cucumberOptions.TestRunner@68567e20</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login test", "Login functionality"</td>
+<td></td>
+<td>5</td>
 <td>cucumberOptions.TestRunner@68567e20</td></tr>
 </table><p>
 </body>

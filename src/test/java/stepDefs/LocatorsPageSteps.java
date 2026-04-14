@@ -53,7 +53,7 @@ public class LocatorsPageSteps {
 		   String rahulText=locatorsPage.getTextOfRahul();
 		   System.out.println("Text displayed: " + rahulText);
 		   Assert.assertTrue(rahulText.contains("Rahul"));
-		   
+		   System.out.println("Text contains 'Rahul'.");
 	}
 
 	@Then("verify user is able to sign in successfully or not")
